@@ -1,0 +1,164 @@
+ html {
+  background-image: url(img/img_03.jpg);
+  /* background-repeat: no-repeat; */
+  margin: auto;
+  }
+
+.center {
+  width: 440px;
+  height: 400px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.block {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  height: 470px;
+  padding: 10px;
+  margin: 15px auto;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto auto 20px 0px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+.login {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 20px 0px 0px 0px;
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+span.log {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+div.swift {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 0 10px;
+  font-family: sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+ .mail {
+  background-color: rgba(100, 100, 100, 0.35);
+  border: 1px solid black;
+  width: 370px;
+  height: 35px;
+  margin: 10px auto;
+  padding-left: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  }
+
+table tr td {
+  border-radius: 6px;
+  text-align: center;
+}
+
+td {
+  width: 170px;
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+table {
+  margin: auto;
+  border-spacing: 4px;
+}
+
+p {
+  font: bold 28px sans-serif;
+  color: white;
+  background-color: green;
+  width: 80%;
+  text-align: center;
+  padding: 15px;
+  margin: 20px auto auto auto;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+p:hover {
+  background-color: #01a901;
+}
+
+p:active {
+background-color: #006800;
+}
+
+td.facebook {
+  color: white;
+  font: bold 14px arial;
+  background-color: #4267b2;
+}
+
+td.twitter {
+  color: white;
+  font: bold 14px arial;
+  background-color: #1CA7ED;
+}
+
+td.google {
+  color: black;
+  font: bold 14px arial;
+  background-color: #ffffff;
+
+}
+
+td.vk {
+  color: white;
+  font: bold 14px arial;
+  background-color: #45668E;
+  text-align: center;
+
+}
+
+td.ok {
+  color: white;
+  font: bold 14px arial;
+  background-color: #f58220;
+}
+
+td.insta {
+  color: white;
+  font: bold 14px arial;
+  background-color: #336699;
+}
+
+img {
+  vertical-align: -4px;
+  height: 20px;
+  padding-right: 4px;
+}
+
+input {
+  background-color: rgba(100, 100, 100, 0);
+  height: 30px;
+  color: white;
+  border: 0px;
+  text-align: center;
+  font:bold 18px arial;
+}
+
+input[type="submit"] {
+  display: none;
+}
