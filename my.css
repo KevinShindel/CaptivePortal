@@ -1,8 +1,16 @@
  html {
-  background-image: url(img/img_03.jpg);
-  /* background-repeat: no-repeat; */
+  background: url(img/img_03.jpg) 100% no-repeat;
   margin: auto;
   }
+
+.relative {
+  position: relative;
+}
+
+.inline {
+  display: inline-block;
+
+}
 
 .center {
   width: 440px;
@@ -12,7 +20,7 @@
 }
 
 .block {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.55);
   border-radius: 8px;
   height: 470px;
   padding: 10px;
@@ -40,14 +48,7 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
-span.log {
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: bold;
-  font-size: 14px;
-  font-family: sans-serif;
-}
-
-div.swift {
+.swift {
   color: white;
   font-weight: bold;
   font-size: 12px;
@@ -55,17 +56,6 @@ div.swift {
   font-family: sans-serif;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
-
- .mail {
-  background-color: rgba(100, 100, 100, 0.35);
-  border: 1px solid black;
-  width: 370px;
-  height: 35px;
-  margin: 10px auto;
-  padding-left: 10px;
-  text-align: left;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-  }
 
 table tr td {
   border-radius: 6px;
@@ -105,43 +95,72 @@ p:active {
 background-color: #006800;
 }
 
-td.facebook {
+.facebook {
   color: white;
   font: bold 14px arial;
   background-color: #4267b2;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 140px;
+  margin-bottom: 5px;
 }
 
-td.twitter {
+.twitter {
   color: white;
   font: bold 14px arial;
   background-color: #1CA7ED;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 140px;
+  margin-bottom: 5px;
 }
 
-td.google {
+.google {
   color: black;
   font: bold 14px arial;
   background-color: #ffffff;
-
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 140px;
+  margin-bottom: 5px;
 }
 
-td.vk {
+
+.vk {
   color: white;
   font: bold 14px arial;
   background-color: #45668E;
   text-align: center;
-
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 140px;
+  margin-bottom: 5px;
 }
 
-td.ok {
+.ok {
   color: white;
   font: bold 14px arial;
   background-color: #f58220;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 140px;
+  margin-bottom: 5px;
 }
 
-td.insta {
+.insta {
   color: white;
   font: bold 14px arial;
   background-color: #336699;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 140px;
+  margin-bottom: 5px;
 }
 
 img {
@@ -151,14 +170,48 @@ img {
 }
 
 input {
-  background-color: rgba(100, 100, 100, 0);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 30px;
   color: white;
   border: 0px;
-  text-align: center;
   font:bold 18px arial;
+  width: 100%;
+  border: 1px solid black;
+  margin: 10px auto;
+  padding-left: 65px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+#pass input {
+  padding-left: 85px;
 }
 
 input[type="submit"] {
   display: none;
+}
+
+#email::before {
+  content: "e-mail: ";
+  position: absolute;
+  top:16px;
+  left:10px;
+  color: white;
+  font:18px Arial bold;
+}
+
+#pass::before {
+  content: "password: ";
+  position: absolute;
+  top:16px;
+  left:10px;
+  color: white;
+  font:18px Arial bold;
+}
+
+.focus:hover {
+  transform: scale(1.025,1.025);
+}
+
+.focus:active {
+  transform: scale(0.95,0.95);
 }
