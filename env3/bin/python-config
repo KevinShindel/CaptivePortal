@@ -1,4 +1,4 @@
-#!/root/CaptivePortal/env3/bin/python
+#!/home/CaptivePortal/env3/bin/python
 
 import sys
 import getopt
