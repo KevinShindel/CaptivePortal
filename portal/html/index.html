@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE HTML>
 <html lang="ru">
 
 <head>
 	<meta charset="utf-8">
 	<title>Титул документа</title>
-	<link rel="stylesheet" href="my.css">
+	<link rel="stylesheet" href="{% static 'my.css' %}">
 </head>
 
 <body>
@@ -15,24 +16,24 @@
 			<div class="swift">Swifly Sing In With</div>
 
 			<div>
-				<div class="facebook focus inline"><img src="img/f.png" alt="">Facebook</div>
-				<div class="twitter focus inline"><img src="img/tw2.png" alt="">Twitter</div>
+				<div class="facebook focus inline"><img src="{% static 'img/f.png' %}" alt="">Facebook</div>
+				<div class="twitter focus inline"><img src="{% static 'img/tw2.png' %}" alt="">Twitter</div>
 			</div>
 
 			<div>
-				<div class="google focus inline"><img src="img/g.png" alt="">Google</div>
-				<div class="vk focus inline"><img src="img/vk.png" alt="">VKontakte</div>
+				<div class="google focus inline"><img src="{% static 'img/g.png' %}" alt="">Google</div>
+				<div class="vk focus inline"><img src="{% static 'img/vk.png'%}" alt="">VKontakte</div>
 			</div>
 			<div>
-				<div class="insta focus inline"><img src="img/insta.png" alt="">Instagram</div>
-				<div class="ok focus inline"><img src="img/o.png" alt="">Одноклассники</div>
+				<div class="insta focus inline"><img src="{% static 'img/insta.png' %}" alt="">Instagram</div>
+				<div class="ok focus inline"><img src="{% static 'img/o.png' %}" alt="">Одноклассники</div>
 			</div>
 
 			<div class="swift">Or Use Your Email:</div>
-			<form action="#" method="GET">
-
+			<form action="#" method="POST">
+                {% csrf_token %}
 				<div class="email relative" id="email" style="width:350px"><input type="email" name="email"></div>
-				<div class="email relative" id="pass" style="width:330px"><input type="Password" name="pass"></div>
+				<div class="email relative" id="pass" style="width:330px"><input type="password" name="pass"></div>
 				<input type="submit" name="" value="" id="submit">
 				<label for="submit">
 					<p>CONNECT</p>
