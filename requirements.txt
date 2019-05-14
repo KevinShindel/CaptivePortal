@@ -1,0 +1,9 @@
+Django==2.2.1
+gitdb2==2.0.5
+GitPython==2.1.11
+pkg-resources==0.0.0
+python-git==2018.2.1
+pytz==2019.1
+Send2Trash==1.5.0
+smmap2==2.0.5
+sqlparse==0.3.0

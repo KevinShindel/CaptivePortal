@@ -215,3 +215,7 @@ input[type="submit"] {
 .focus:active {
   transform: scale(0.95,0.95);
 }
+
+.branch {
+  color: white;
+}
